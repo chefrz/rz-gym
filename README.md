@@ -18,6 +18,8 @@
 -  You can see the progress of your character with the help of the UI
 - Easy configurable Config (everything is adjustable)
 - Script using full qb-target
+- Buff System
+- Skill System
 
 
 ## Dependencies
