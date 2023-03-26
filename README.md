@@ -14,6 +14,8 @@
 - Script using full qb-target
 - Duplicate  sports zone
 - Duplicate sports market
+- Buff System
+- Skill System
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
