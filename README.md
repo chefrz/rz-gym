@@ -25,6 +25,7 @@
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
 - [qb-target](https://github.com/qbcore-framework/qb-target)
+- [qb-smallresources](https://github.com/qbcore-framework/qb-smallresources)
 - [ps-buffs](https://github.com/Project-Sloth/ps-buffs)
 
 ## Installation
