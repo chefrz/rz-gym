@@ -142,6 +142,7 @@ end)
 
 ```
 ensure rz-gym
+ensure gamz-skillsystem
 ensure ps-buffs
 ```
 
