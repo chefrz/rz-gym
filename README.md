@@ -10,12 +10,15 @@
 - https://discord.gg/zertxMj7Y
 
 ## Features
+-  If you eat redbull and chocolate and do sports, you will gain more stamina and strength. (2x)
+-  If you drive your vehicle at the speed you set, your driving ability will skill
+-  If you front-lift on the motorcycle,  your Wheelie ability will skill
+-  You need to rest after exercising
+-  Sports area and shops can be duplicate
+-  You can see the progress of your character with the help of the UI
 - Easy configurable Config (everything is adjustable)
 - Script using full qb-target
-- Duplicate  sports zone
-- Duplicate sports market
-- Buff System
-- Skill System
+
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
