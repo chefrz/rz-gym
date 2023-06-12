@@ -222,11 +222,14 @@ AddEventHandler('rz-gym:jogging',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Jogging.animDict, config.Skills.Jogging.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -266,11 +269,14 @@ AddEventHandler('rz-gym:chinup',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Chinups.animDict, config.Skills.Chinups.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)	
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end
     end)
   else
       QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -309,11 +315,14 @@ AddEventHandler('rz-gym:crunches',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Crunches.animDict, config.Skills.Crunches.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)	
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -356,11 +365,14 @@ AddEventHandler('rz-gym:zbar',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.ZBAR.animDict, config.Skills.ZBAR.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)		
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -399,11 +411,14 @@ AddEventHandler('rz-gym:pushups',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Pushups.animDict, config.Skills.Pushups.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)		
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end	
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -442,11 +457,14 @@ AddEventHandler('rz-gym:yoga',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Yoga.animDict, config.Skills.Yoga.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)		
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end	
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
@@ -485,11 +503,14 @@ AddEventHandler('rz-gym:meditation',function()
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Meditation.animDict, config.Skills.Meditation.anim, 1.0)
-        QBCore.Functions.Notify(config.langs[config.lang].finishspor)		
-        training = true		
-        Citizen.Wait(config.SporCd)
-        training = false
-        QBCore.Functions.Notify(config.langs[config.lang].finishcd)		
+        local oob = math.random(1,100)
+        if oob >= 85 then
+          QBCore.Functions.Notify(config.langs[config.lang].finishspor)
+          training = true
+          Citizen.Wait(config.SporCd)
+          training = false
+          QBCore.Functions.Notify(config.langs[config.lang].finishcd)
+        end
     end)
   else
     QBCore.Functions.Notify(config.langs[config.lang].cd)
