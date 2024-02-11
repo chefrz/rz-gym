@@ -204,21 +204,9 @@ AddEventHandler('rz-gym:jogging',function()
       }, {}, {}, function() 
         
         if exports['ps-buffs']:HasBuff("gym-stamina") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Jogging.skill, config.Skills.Jogging.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Jogging.animDict, config.Skills.Jogging.anim, 1.0)
@@ -248,21 +236,9 @@ AddEventHandler('rz-gym:chinup',function()
         anim = config.Skills.Chinups.anim,
       }, {}, {}, function() 	
         if exports['ps-buffs']:HasBuff("gym-strength") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Chinups.skill, config.Skills.Chinups.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Chinups.animDict, config.Skills.Chinups.anim, 1.0)
@@ -291,21 +267,9 @@ AddEventHandler('rz-gym:crunches',function()
         anim = config.Skills.Crunches.anim,
       }, {}, {}, function() 	
         if exports['ps-buffs']:HasBuff("gym-stamina") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Crunches.skill, config.Skills.Crunches.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Crunches.animDict, config.Skills.Crunches.anim, 1.0)
@@ -338,21 +302,9 @@ AddEventHandler('rz-gym:zbar',function()
         bone = 28422,
       }, {}, function() 
         if exports['ps-buffs']:HasBuff("gym-strength") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.ZBAR.skill, config.Skills.ZBAR.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.ZBAR.animDict, config.Skills.ZBAR.anim, 1.0)
@@ -381,21 +333,9 @@ AddEventHandler('rz-gym:pushups',function()
         anim = config.Skills.Pushups.anim,
       }, {}, {}, function() 
         if exports['ps-buffs']:HasBuff("gym-strength") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Pushups.skill, config.Skills.Pushups.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Pushups.animDict, config.Skills.Pushups.anim, 1.0)
@@ -424,21 +364,9 @@ AddEventHandler('rz-gym:yoga',function()
         anim = config.Skills.Yoga.anim,
       }, {}, {}, function() 
         if exports['ps-buffs']:HasBuff("gym-stamina") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Yoga.skill, config.Skills.Yoga.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Yoga.animDict, config.Skills.Yoga.anim, 1.0)
@@ -467,21 +395,9 @@ AddEventHandler('rz-gym:meditation',function()
         anim = config.Skills.Meditation.anim,
       }, {}, {}, function() 
         if exports['ps-buffs']:HasBuff("gym-stamina") then
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.buff)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.buff)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.buff)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.buff)
         else
-          if config.SkillSystem == 'gamz-skillsystem' then
-            exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.amount)
-          elseif config.SkillSystem == 'mz-skills' then
-            exports["mz-skills"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.amount)
-          elseif config.SkillSystem == 'B1-skillz' then
-            exports["B1-skillz"]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.amount)
-          end
+          exports[config.SkillSystem]:UpdateSkill(config.Skills.Meditation.skill, config.Skills.Meditation.amount)
         end
         ClearPedSecondaryTask(player)
         StopAnimTask(player, config.Skills.Meditation.animDict, config.Skills.Meditation.anim, 1.0)
@@ -501,16 +417,8 @@ Citizen.CreateThread(function()
 		Citizen.Wait(config.SwimmingLoopTime)
     local playerPed = PlayerPedId()
     if IsPedSwimmingUnderWater(playerPed) then
-      if config.SkillSystem == 'gamz-skillsystem' then
-        exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Swimming.skill, config.Skills.Swimming.amount)
-        exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Swimming.skill2, config.Skills.Swimming.amount2)
-      elseif config.SkillSystem == 'mz-skills' then
-        exports["mz-skills"]:UpdateSkill(config.Skills.Swimming.skill, config.Skills.Swimming.amount)
-        exports["mz-skills"]:UpdateSkill(config.Skills.Swimming.skill2, config.Skills.Swimming.amount2)
-      elseif config.SkillSystem == 'B1-skillz' then
-        exports["B1-skillz"]:UpdateSkill(config.Skills.Swimming.skill, config.Skills.Swimming.amount)
-        exports["B1-skillz"]:UpdateSkill(config.Skills.Swimming.skill2, config.Skills.Swimming.amount2)
-      end
+      exports[config.SkillSystem]:UpdateSkill(config.Skills.Swimming.skill, config.Skills.Swimming.amount)
+      exports[config.SkillSystem]:UpdateSkill(config.Skills.Swimming.skill2, config.Skills.Swimming.amount2)
     end
 	end
 end)
@@ -527,24 +435,12 @@ Citizen.CreateThread(function()
               local rotation = GetEntityRotation(vehicle)
               if IsControlPressed(0, 210) then
                   if rotation.x >= 25.0 then
-                    if config.SkillSystem == 'gamz-skillsystem' then
-                      exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Wheelie.skill, config.Skills.Wheelie.amount)
-                    elseif config.SkillSystem == 'mz-skills' then
-                      exports["mz-skills"]:UpdateSkill(config.Skills.Wheelie.skill, config.Skills.Wheelie.amount)
-                    elseif config.SkillSystem == 'B1-skillz' then
-                      exports["B1-skillz"]:UpdateSkill(config.Skills.Wheelie.skill, config.Skills.Wheelie.amount)
-                    end
+                    exports[config.SkillSystem]:UpdateSkill(config.Skills.Wheelie.skill, config.Skills.Wheelie.amount)
                   end 
               end
           end
           if speed >= config.DrivingMinSpeed then
-            if config.SkillSystem == 'gamz-skillsystem' then
-              exports["gamz-skillsystem"]:UpdateSkill(config.Skills.Driving.skill, config.Skills.Driving.amount)
-            elseif config.SkillSystem == 'mz-skills' then
-              exports["mz-skills"]:UpdateSkill(config.Skills.Driving.skill, config.Skills.Driving.amount)
-            elseif config.SkillSystem == 'B1-skillz' then
-              exports["B1-skillz"]:UpdateSkill(config.Skills.Driving.skill, config.Skills.Driving.amount)
-            end
+            exports[config.SkillSystem]:UpdateSkill(config.Skills.Driving.skill, config.Skills.Driving.amount)
           end
       end
 		end
