@@ -7,7 +7,7 @@
 ## Video Showcase
 - https://youtu.be/8b8hPhdv8SM
 ## Discord
-- https://discord.gg/zertxMj7Y
+- https://discord.gg/3JHgCdUFtG
 
 ## Update 
 - Fixed some known bugs and updated the setup lines
